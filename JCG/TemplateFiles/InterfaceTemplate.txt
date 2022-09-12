@@ -1,0 +1,8 @@
+interface_access interface interface_name{
+
+	/*TODO functions Prototypes Here!!! e.g.
+	  public void functionName(Arguments){
+		}
+	*/
+
+}

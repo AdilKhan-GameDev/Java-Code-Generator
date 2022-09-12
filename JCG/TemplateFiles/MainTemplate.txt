@@ -1,0 +1,8 @@
+aclass_access aclass_scope class aclass_name{
+
+	public static void main(String[] args){
+
+
+	}
+
+}

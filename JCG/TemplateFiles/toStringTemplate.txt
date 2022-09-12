@@ -1,0 +1,11 @@
+aclass_access aclass_scope class aclass_name
+{
+	public String toString(/*TODO Arguments*/)
+	{
+
+	return "/*Return String Here*/";
+
+	}
+
+
+}

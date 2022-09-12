@@ -1,0 +1,14 @@
+aclass_access aclass_type class aclass_name
+{
+	method_access method_scope return_type method_name(/*Arguments Here!!*/)
+	{
+
+
+
+	
+	return /*variable to return*/;
+	}
+
+
+
+}

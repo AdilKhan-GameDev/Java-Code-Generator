@@ -1,0 +1,17 @@
+aclass_access aclass_scope class aclass_name
+{
+	method_access method_scope return_type method_name(/*Arguments Here!!*/)
+	{
+
+		if(/*TODO Condition*/ )
+		{
+			method_name(/*Arguments*/);
+		}
+
+	
+	return /*variable to return*/;
+	}
+
+
+
+}

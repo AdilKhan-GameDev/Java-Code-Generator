@@ -1,0 +1,20 @@
+class aclass_name
+{
+    method_access method_type method-name(/*Arguments here*/)
+    {
+         //Function Body
+    }
+    method_access method_type method-name(/*Arguments here*/)  
+    {
+         //Function Body
+    }
+}
+class main
+{
+   public static void main(String args[])
+   {
+       aclass_name obj = new aclass_name();
+       obj.method_name(/*Pass Arguments here*/);
+       obj.method_name(/*Pass Arguments here*/);
+   }
+}

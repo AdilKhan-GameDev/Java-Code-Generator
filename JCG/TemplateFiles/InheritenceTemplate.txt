@@ -1,0 +1,14 @@
+public class aclass_name
+{
+
+
+
+}
+
+
+public class bclass_name extends aclass_name
+{
+
+
+
+}

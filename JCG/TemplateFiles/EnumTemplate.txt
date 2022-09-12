@@ -1,0 +1,13 @@
+enum enum_name
+{ 
+    //TODO Enum Components
+} 
+  
+aclass_access class aclass_name
+{ 
+    //Enum Driver method 
+    public static void main(String[] args) 
+    { 
+        //TODO Call Enum elements!!
+    } 
+}

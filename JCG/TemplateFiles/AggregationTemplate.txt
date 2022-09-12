@@ -1,0 +1,13 @@
+aclass_access class aclass_name{
+
+
+
+}
+
+bclass_access class bclass_name{
+
+	
+	aclass_name variable;
+
+
+}

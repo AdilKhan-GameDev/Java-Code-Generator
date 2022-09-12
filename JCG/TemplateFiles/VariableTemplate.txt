@@ -1,0 +1,7 @@
+aclass_access aclass_scope class aclass_name
+{
+	var_access var_scope var_type var_name;
+	
+
+
+}

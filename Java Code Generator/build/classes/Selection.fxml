@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="750.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SelectionController">
+    <stylesheets>
+        <URL value="@selection.css" />
+    </stylesheets>
+   <children>
+      <TabPane prefHeight="600.0" prefWidth="750.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="classtab" text="       Class       ">
+            <content>
+              <AnchorPane fx:id="classanchor" prefHeight="259.0" prefWidth="365.0">
+                     <children>
+                        <CheckBox fx:id="constructorbox" layoutX="14.0" layoutY="69.0" mnemonicParsing="false" text="Constructor" />
+                        <CheckBox fx:id="mainbox" layoutX="14.0" layoutY="381.0" mnemonicParsing="false" text="Main Method" />
+                        <CheckBox fx:id="tostringbox" layoutX="14.0" layoutY="277.0" mnemonicParsing="false" text="toString()" />
+                        <CheckBox fx:id="instancebox" layoutX="14.0" layoutY="180.0" mnemonicParsing="false" text="Instances" />
+                        <ComboBox fx:id="cscopecombo" layoutX="310.0" layoutY="65.0" prefHeight="25.0" prefWidth="84.0" promptText="Scope" visibleRowCount="2" />
+                        <ComboBox fx:id="caccesscombo" layoutX="126.0" layoutY="65.0" prefHeight="25.0" prefWidth="84.0" promptText="Access" visibleRowCount="4" />
+                        <ComboBox fx:id="tascopecombo" layoutX="310.0" layoutY="273.0" prefHeight="25.0" prefWidth="84.0" promptText="Scope" visibleRowCount="2" />
+                        <ComboBox fx:id="taccesscombo" layoutX="126.0" layoutY="273.0" prefHeight="25.0" prefWidth="84.0" promptText="Access" visibleRowCount="4" />
+                        <ComboBox fx:id="iscopecombo" layoutX="310.0" layoutY="176.0" prefHeight="25.0" prefWidth="84.0" promptText="Scope" visibleRowCount="2" />
+                        <ComboBox fx:id="iaccesscombo" layoutX="126.0" layoutY="176.0" prefHeight="25.0" prefWidth="84.0" promptText="Access" visibleRowCount="4" />
+                        <Button layoutX="634.0" layoutY="531.0" mnemonicParsing="false" onAction="#ClassNextButton" text="Generate" />
+                        <ComboBox fx:id="ireturncombo" layoutX="461.0" layoutY="176.0" prefHeight="25.0" prefWidth="72.0" promptText="Type" visibleRowCount="5" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="inheritencetab" text="  Inheritence  ">
+               <content>
+                  <AnchorPane fx:id="inheritenceanchor" prefHeight="259.0" prefWidth="365.0">
+                     <children>
+                        <CheckBox fx:id="childbox" layoutX="14.0" layoutY="69.0" mnemonicParsing="false" text="Child Class" />
+                        <CheckBox fx:id="aggbox" layoutX="14.0" layoutY="175.0" mnemonicParsing="false" text="Aggregation" />
+                        <CheckBox fx:id="loadingbox" layoutX="14.0" layoutY="277.0" mnemonicParsing="false" text="Overloading" />
+                        <CheckBox fx:id="ridingbox" layoutX="14.0" layoutY="379.0" mnemonicParsing="false" text="Overriding" />
+                        <ComboBox fx:id="childaccesscombo" layoutX="135.0" layoutY="65.0" prefHeight="25.0" prefWidth="84.0" promptText="Access" visibleRowCount="4" />
+                        <ComboBox fx:id="aggascopecombo" layoutX="315.0" layoutY="171.0" prefHeight="25.0" prefWidth="84.0" promptText="Scope" visibleRowCount="2" />
+                        <ComboBox fx:id="aggaccesscombo" layoutX="135.0" layoutY="171.0" prefHeight="25.0" prefWidth="84.0" promptText="Access" visibleRowCount="4" />
+                        <Button layoutX="634.0" layoutY="531.0" mnemonicParsing="false" onAction="#InheritenceNextButton" text="Generate" />
+                        <ComboBox fx:id="loadingreturncombo" layoutX="137.0" layoutY="273.0" prefHeight="25.0" prefWidth="80.0" promptText="Type-1" visibleRowCount="5" />
+                        <ComboBox fx:id="ridingareturncombo" layoutX="141.0" layoutY="375.0" prefHeight="25.0" prefWidth="72.0" promptText="Type" visibleRowCount="5" />
+                        <ComboBox fx:id="loadingreturn2combo" layoutX="314.0" layoutY="273.0" prefHeight="25.0" prefWidth="87.0" promptText="Type-2" visibleRowCount="5" />
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+            <Tab fx:id="functiontab" text="  Functions  ">
+               <content>
+                  <AnchorPane fx:id="functionanchor" prefHeight="259.0" prefWidth="365.0">
+                     <children>
+                        <CheckBox fx:id="mmainbox" layoutX="14.0" layoutY="437.0" mnemonicParsing="false" text="Main Method" />
+                        <CheckBox fx:id="tobox" layoutX="15.0" layoutY="348.0" mnemonicParsing="false" text="toString()" />
+                        <CheckBox fx:id="setbox" layoutX="14.0" layoutY="47.0" mnemonicParsing="false" text="Setters()" />
+                        <CheckBox fx:id="getbox" layoutX="14.0" layoutY="149.0" mnemonicParsing="false" text="Getters()" />
+                        <ComboBox fx:id="setscopecombo" layoutX="314.0" layoutY="43.0" prefHeight="25.0" prefWidth="84.0" promptText="Scope" visibleRowCount="2" />
+                        <ComboBox fx:id="setaccesscombo" layoutX="107.0" layoutY="43.0" prefHeight="25.0" prefWidth="84.0" promptText="Access" visibleRowCount="4" />
+                        <ComboBox fx:id="getscopecombo" layoutX="314.0" layoutY="145.0" prefHeight="25.0" prefWidth="84.0" promptText="Scope" visibleRowCount="2" />
+                        <ComboBox fx:id="getaccesscombo" layoutX="107.0" layoutY="145.0" prefHeight="25.0" prefWidth="84.0" promptText="Access" visibleRowCount="4" />
+                        <CheckBox fx:id="recursionbox" layoutX="14.0" layoutY="245.0" mnemonicParsing="false" text="Recursion" />
+                        <ComboBox fx:id="recursivescopecommbo" layoutX="314.0" layoutY="241.0" prefHeight="25.0" prefWidth="84.0" promptText="Scope" visibleRowCount="2" />
+                        <ComboBox fx:id="recursiveaccesscommbo" layoutX="107.0" layoutY="241.0" prefHeight="25.0" prefWidth="84.0" promptText="Access" visibleRowCount="4" />
+                        <Button layoutX="634.0" layoutY="531.0" mnemonicParsing="false" onAction="#FunctionNextButton" text="Generate" />
+                        <ComboBox fx:id="getreturncombo" layoutX="452.0" layoutY="145.0" prefHeight="25.0" prefWidth="72.0" promptText="Type" visibleRowCount="5" />
+                        <ComboBox fx:id="recursivereturncommbo" layoutX="452.0" layoutY="241.0" prefHeight="25.0" prefWidth="72.0" promptText="Type" visibleRowCount="5" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="interfacetab" text="   Interface    ">
+               <content>
+                  <AnchorPane fx:id="interfaceanchor" prefHeight="259.0" prefWidth="365.0">
+                     <children>
+                        <CheckBox fx:id="interbox" layoutX="14.0" layoutY="69.0" mnemonicParsing="false" text="Interface" />
+                        <ComboBox fx:id="interaccesscombo" layoutX="171.0" layoutY="65.0" prefHeight="25.0" prefWidth="84.0" promptText="Access" visibleRowCount="4" />
+                        <Button layoutX="634.0" layoutY="531.0" mnemonicParsing="false" onAction="#InterfaceNextButton" text="Generate" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="hellotab" text=" HelloWorld">
+               <content>
+                  <AnchorPane fx:id="helloanchor" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="750.0">
+                     <children>
+                        <Button layoutX="322.0" layoutY="269.0" mnemonicParsing="false" onAction="#HelloNextButton" text="Generate" />
+                        <Label layoutX="171.0" layoutY="69.0" text="Click the &quot;Generate&quot; Button Below to create a HelloWorld Program">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="204.0" layoutY="96.0" text="This is the Starting Program that most of the Programmers Learn" />
+                        <Label layoutX="330.0" layoutY="162.0" text="Thank You!!!">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

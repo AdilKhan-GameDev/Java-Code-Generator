@@ -1,0 +1,9 @@
+aclass_access aclass_scope class aclass_name{
+
+	constructor_access aclass_name(/*Arguments Here!!*/)
+	{
+
+
+	}
+
+}

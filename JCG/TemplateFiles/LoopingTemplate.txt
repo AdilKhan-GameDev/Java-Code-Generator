@@ -1,0 +1,19 @@
+aclass_access class aclass_name
+{
+	public void LoopMethod()
+	{
+		for(/*variable initialization; Condition; increment/decrement*/)
+		{
+
+
+		}
+	
+		//Variable declaration/initialization
+		while(/*TODO Condition Here*/)
+		{
+	
+		//Increment/Decrement;
+		}
+	}
+
+}

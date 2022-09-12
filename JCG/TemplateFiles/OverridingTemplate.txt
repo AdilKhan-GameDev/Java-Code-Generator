@@ -1,0 +1,34 @@
+public class aclass_name{
+   
+   public method_type method_name(){
+
+	//MEthod Body for aclass_name class
+   }
+}
+
+public class bclass_name extends aclass_name{
+
+    @Override
+    public method_type method_name(){
+
+	//MEthod Body for bclass_name class
+    }
+}
+
+public class cclass_name extends aclass_name {
+
+    @Override
+    public method_type method_name(){
+
+	//MEthod Body for cclass_name class
+    }
+}
+
+
+
+
+
+
+
+
+
